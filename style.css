@@ -1,0 +1,20 @@
+html, body {
+  margin: 0;
+  padding: 0;
+/*   background: black; */
+/*   color: #eee; */
+  font-family: "Garamond"
+}
+canvas {
+  display: block;
+/*   background: #fff; */
+}
+
+#title {
+  font-size: 24px;
+}
+
+div {
+  padding: 5px;
+  margin-left:   15px;
+}

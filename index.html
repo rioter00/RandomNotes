@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="title">Random Note Generation - Part of Punctuated Equilibrium - Nick Hwang</div>
+    <div>
+      <label for="notesInput"> Number of Notes </label>
+      <input type="number" id="notesInput" min= "0" max="6" pattern="[0-9]{1,2}" value="6" placeholder="6" />
+    </div>
+        <div>
+      <label for="notesUpperBounds"> Notes Upper Bounds (24 = C6) </label>
+      <input type="number" min= "1" max="24" value="24" pattern="[0-9]{1,2}" 
+id="notesUpperBounds" placeholder="24" />
+    </div>
+    <div>
+      <label for="notesLowerBounds"> Notes Lower Bounds (0 = C4) </label>
+      <input type="number" id="notesLowerBounds" pattern="[0-9]{1,2}" min= "0" max="24" value="0" placeholder="0" />
+    </div>
+    <div>
+<input type="checkbox" id="showStems" name="vehicle1">
+<label for="showStems"> Show Stems</label><br>
+    </div>    
+    <div>
+      <button id="load">load new notes</button>
+    </div>
+    <script src="sketch.js"></script>
+    <script src="controller.js"></script>
+  </body>
+</html>
